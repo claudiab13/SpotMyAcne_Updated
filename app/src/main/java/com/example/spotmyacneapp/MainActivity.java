@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity /*implements OnMapReadyCallb
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()){
-                            Toast.makeText(MainActivity.this,"Succesful Log In!", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity.this,"Successful Log In!", Toast.LENGTH_SHORT).show();
 
                             Intent intent = new Intent(MainActivity.this, HomeActivity.class);
                             startActivity(intent);

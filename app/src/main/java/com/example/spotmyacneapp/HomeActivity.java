@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -16,6 +17,7 @@ public class HomeActivity extends AppCompatActivity {
 
         Button map = findViewById(R.id.map);
         Button calendar = findViewById(R.id.calendar);
+        TextView logOut = findViewById(R.id.logout);
 
         map.setOnClickListener(view -> {
             Intent intent = new Intent(HomeActivity.this, MapActivity.class);
@@ -23,14 +25,14 @@ public class HomeActivity extends AppCompatActivity {
         });
 
         calendar.setOnClickListener(view -> {
-            Log.d("Calendar", "Butonul de calendar a fost apăsat."); // Mesaj de log pentru a confirma apăsarea butonului
-
             Intent intent = new Intent(HomeActivity.this, CalendarActivity.class);
             startActivity(intent);
-            Log.d("Calendar", "Redirecționare către MapActivity."); // Mesaj de log pentru a confirma redirecționarea
-
         });
 
+        logOut.setOnClickListener(view -> {
+            Intent intent = new Intent(HomeActivity.this, MainActivity.class);
+            startActivity(intent);
+        });
     }
 }
 

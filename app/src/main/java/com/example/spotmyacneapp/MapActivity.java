@@ -5,7 +5,6 @@ import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
@@ -15,7 +14,6 @@ import androidx.core.app.ActivityCompat;
 
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
-import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
@@ -66,6 +64,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
                     currentLocation = location;
 
                     SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.id_map);
+                    assert mapFragment != null;
                     mapFragment.getMapAsync((OnMapReadyCallback) MapActivity.this);
 
                 }
@@ -77,8 +76,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
 
         LatLng sydney = new LatLng(currentLocation.getLatitude(), currentLocation.getLongitude());
         googleMap.addMarker(new MarkerOptions().position(sydney).title("My Location"));
-        CameraUpdateFactory CameraUpdateFactory = null;
-        googleMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        googleMap.moveCamera(com.google.android.gms.maps.CameraUpdateFactory.newLatLng(sydney));
 
     }
 
