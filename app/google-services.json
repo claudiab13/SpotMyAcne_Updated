@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "469325968107",
+    "firebase_url": "https://spot-my-acne-default-rtdb.firebaseio.com",
+    "project_id": "spot-my-acne",
+    "storage_bucket": "spot-my-acne.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:469325968107:android:a2071aba181325bcc344ae",
+        "android_client_info": {
+          "package_name": "com.example.spotmyacneapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASUyWUo_Ay1hlaY8agpcVnWb3RDUxMOkE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

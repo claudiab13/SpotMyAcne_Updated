@@ -1,0 +1,21 @@
+
+
+pluginManagement {
+    repositories {
+        google()
+        gradlePluginPortal()
+        maven {
+            url 'https://example.com/maven-repo'
+        }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.name = "SpotMyAcne App"
+include ':app'
