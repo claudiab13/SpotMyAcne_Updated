@@ -28,13 +28,10 @@
     <string name="night">NIGHT</string>
     <string name="morning">MORNING</string>
     <string name="photo_of_the_day">PHOTO OF THE DAY</string>
-    <string name="produs1">Produs1</string>
-    <string name="produs11">Produs1</string>
-    <string name="produs3">Produs3</string>
-    <string name="produs2">Produs2</string>
-    <string name="produs22">Produs2</string>
-    <string name="produs33">Produs3</string>
     <string name="email">E-mail</string>
     <string name="already_have_an_account">Already have an account?</string>
     <string name="log_out">Log Out</string>
+    <string name="take_photo">Take photo</string>
+    <string name="Photo">Photo</string>
+    <string name="todo">TODO</string>
 </resources>
