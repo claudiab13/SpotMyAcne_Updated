@@ -34,4 +34,6 @@
     <string name="take_photo">Take photo</string>
     <string name="Photo">Photo</string>
     <string name="todo">TODO</string>
+    <string name="save_photo">Save photo</string>
+    <string name="save_Photo">Save Photo</string>
 </resources>
