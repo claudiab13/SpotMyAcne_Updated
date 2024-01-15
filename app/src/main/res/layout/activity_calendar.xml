@@ -27,12 +27,13 @@
 
     <ImageView
         android:id="@+id/photo"
-        android:layout_width="215dp"
-        android:layout_height="339dp"
+        android:layout_width="240dp"
+        android:layout_height="329dp"
         android:layout_marginBottom="16dp"
         android:contentDescription="@string/todo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.093"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@color/common_google_signin_btn_text_dark_pressed"
         tools:ignore="ImageContrastCheck" />
@@ -47,5 +48,27 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/baseline_photo_camera_24" />
+
+    <Button
+        android:id="@+id/save_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#4EC553"
+        android:text="@string/save_Photo"
+        android:textColor="#424242"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/photo"
+        app:layout_constraintEnd_toEndOf="@+id/photo"
+        app:layout_constraintStart_toStartOf="@+id/photo"
+        app:layout_constraintTop_toTopOf="@+id/photo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
