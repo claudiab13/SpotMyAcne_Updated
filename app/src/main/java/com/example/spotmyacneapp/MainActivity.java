@@ -15,7 +15,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class MainActivity extends AppCompatActivity /*implements OnMapReadyCallback*/ {
+public class MainActivity extends AppCompatActivity {
 
     private EditText loginEmail, loginPassword;
     private FirebaseAuth mAuth;
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity /*implements OnMapReadyCallb
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()){
-                            Toast.makeText(MainActivity.this,"Successful Log In!", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity.this,"Successful log in!", Toast.LENGTH_SHORT).show();
 
                             Intent intent = new Intent(MainActivity.this, HomeActivity.class);
                             startActivity(intent);
